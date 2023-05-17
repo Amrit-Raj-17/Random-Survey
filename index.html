@@ -1,15 +1,18 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="">
     <title>Survey</title>
 </head>
 <body>
     <p class="survey">Survey Form</p>
     <dev class="details">
         <p>Name</p>
-        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        <input type="text" name="name" id="name" placeholder="Enter Your Name"><br>
         <p>Email</p>
-        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        <input type="email" name="email" id="email" placeholder="Enter Your Email"><br>
+        <p>Birthday</p>
+        <input type="date" id="birthday" name="birthday">
         <p>Age</p>
         <input type="number" name="age" id="age" placeholder="Enter Your Age">
         <p>Which option best describes you?</p>
@@ -54,7 +57,7 @@
         </form>
         <p>Any comments or suggestions?</p>
         <input type="text"><br>
-        <button class="submit">SUBMIT</button>
+        <input class="submit" type="button" onclick="alert('Thank you for the survey.')" value="SUBMIT">
     </dev>
 </body>
 </html>
