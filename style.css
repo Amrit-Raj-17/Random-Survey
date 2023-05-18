@@ -33,7 +33,7 @@ form{
     display: inline-block;
     width: auto;
 }
-button{
+.button{
     background-color: #05c46b;
     border: 1px solid #777;
     border-radius: 2px;
