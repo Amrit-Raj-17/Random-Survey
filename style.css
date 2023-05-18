@@ -44,3 +44,9 @@ form{
     margin-top: 50px;
     margin-bottom: 20px;
 }
+.button:hover{
+    cursor: pointer;
+}
+.button:active{
+    opacity: 0.75;
+}
