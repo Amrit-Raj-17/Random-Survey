@@ -1,139 +1,149 @@
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/meow.jpg">
-    <title>Survey</title>
-</head>
-<body>
-    <h1>Survey Form</h1>
-  
-    <form id="form">
- 
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Name
-            </label>
- 
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
-  
-        <div class="form-control">
-            <label for="email" id="label-email">
-                Email
-            </label>
- 
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
-        </div>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/images/meow.jpg">
+        <title>Survey</title>
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+    
+        <form id="form" method="post" name="google-sheet">
+    
+            <div class="form-control">
+                <label for="name" id="label-name">
+                    Name
+                </label>
+    
+                <input type="text"
+                    id="name" name="Name"
+                    placeholder="Enter your name" />
+            </div>
+    
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+    
+                <input type="email"
+                    id="email" name="Email"
+                    placeholder="Enter your email" />
+            </div>
 
-        <div class="form-control">
-            <label for="birthday" id="label-birthday">
-                Birthday
-            </label>
+            <div class="form-control">
+                <label for="birthday" id="label-birthday">
+                    Birthday
+                </label>
 
-            <input type="date"
-                id="birthday"
-                placeholder="Enter your birthday" />
-        </div>
-  
-        <div class="form-control">
-            <label for="age" id="label-age">
-                Age
-            </label>
- 
-            <input type="text"
-                   id="age"
-                   placeholder="Enter your age" />
-        </div>
-  
-        <div class="form-control">
-            <label for="role" id="label-role">
-                Which option best describes you?
-            </label>
-             
-            <select name="role" id="role">
-                <option value="student">Student</option>
-                <option value="intern">Intern</option>
-                <option value="professional">
-                    Professional
-                </option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-  
-        <div class="form-control">
-            <label>
-                Would you recommend GeeksforGeeks
-                to a friend?
-            </label>
- 
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-            <label for="recommed-3">
-                <input type="radio"
-                       id="recommed-3"
-                       name="recommed">Maybe</input>
-            </label>
-        </div>
-  
-        <div class="form-control">
-            <label>Languages and Frameworks known
-                <small>(Check all that apply)</small>
-            </label>
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">C</input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">C++</input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">C#</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Java</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Python</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">JavaScript</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">React</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Angular</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Django</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Spring</input></label>
-        </div>
-  
-        <div class="form-control">
-            <label for="comment">
-                Any comments or suggestions
-            </label>
-            <textarea name="comment" id="comment" 
-                cols="50" rows="5" 
-                placeholder="Enter your comments here..."></textarea>
-        </div>
+                <input type="date"
+                    id="birthday" name="Birthday"
+                    placeholder="Enter your birthday" />
+            </div>
+    
+            <div class="form-control">
+                <label for="age" id="label-age">
+                    Age
+                </label>
+    
+                <input type="text"
+                    id="age" name="Age"
+                    placeholder="Enter your age" />
+            </div>
+    
+            <div class="form-control">
+                <label for="role" id="label-role">
+                    Which option best describes you?
+                </label>
+                
+                <select name="role" id="role" name="Role">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">
+                        Professional
+                    </option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="form-control">
+                <label>
+                    Would you recommend GeeksforGeeks
+                    to a friend?
+                </label>
+    
+                <label for="recommed-1">
+                    <input type="radio"
+                        id="recommed-1" name="Recommendation"
+                        name="recommed">Yes</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                        id="recommed-2" name="Recommendation"
+                        name="recommed">No</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                        id="recommed-3" name="Recommendation"
+                        name="recommed">Maybe</input>
+                </label>
+            </div>
+    
+            <div class="form-control">
+                <label>Languages and Frameworks known
+                    <small>(Check all that apply)</small>
+                </label>
+                <label for="inp-1">
+                    <input type="checkbox"
+                        name="inp">C</input></label>
+                <label for="inp-2">
+                    <input type="checkbox"
+                        name="inp">C++</input></label>
+                <label for="inp-3">
+                    <input type="checkbox"
+                        name="inp">C#</input></label>
+                <label for="inp-4">
+                    <input type="checkbox"
+                        name="inp">Java</input></label>
+                <label for="inp-5">
+                    <input type="checkbox"
+                        name="inp">Python</input></label>
+                <label for="inp-6">
+                    <input type="checkbox"
+                        name="inp">JavaScript</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                        name="inp">React</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                        name="inp">Angular</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                        name="inp">Django</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                        name="inp">Spring</input></label>
+            </div>
+    
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or suggestions
+                </label>
+                <textarea name="Comment" id="comment" 
+                    cols="50" rows="5" 
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
 
-        <input class="button" type="submit" value="Submit">
-    </input>
-    </form>
-</body>
+            <input class="button" type="submit" value="Submit"></input>
+        </form>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxlbQSuIuj9Xd_CPIQPBAwHx0kk_d7H4hrE_u-VNlTzzWZobF35dSbBJLF8_DTPj7fy/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
 </html>
