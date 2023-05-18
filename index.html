@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/images/meow.jpg">
+        <link rel="icon" type="image/x-icon" href="images/meow.jpg">
         <title>Survey</title>
     </head>
     <body>
@@ -54,10 +54,10 @@
                     Which option best describes you?
                 </label>
                 
-                <select name="role" id="role" name="Role">
-                    <option value="student">Student</option>
-                    <option value="intern">Intern</option>
-                    <option value="professional">
+                <select id="role" name="Role">
+                    <option value="Student">Student</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Professional">
                         Professional
                     </option>
                     <option value="other">Other</option>
@@ -72,18 +72,19 @@
     
                 <label for="recommed-1">
                     <input type="radio"
-                        id="recommed-1" name="Recommendation"
-                        name="recommed">Yes</input>
+                        id="recommed-1"
+                        name="Recom." value="Yes">Yes</input>
                 </label>
                 <label for="recommed-2">
                     <input type="radio"
-                        id="recommed-2" name="Recommendation"
-                        name="recommed">No</input>
+                        id="recommed-2"
+                        name="Recom." value="No">No</input>
                 </label>
                 <label for="recommed-3">
                     <input type="radio"
-                        id="recommed-3" name="Recommendation"
-                        name="recommed">Maybe</input>
+                        id="recommed-3"
+                        name="Recom."
+                        value="Maybe">Maybe</input>
                 </label>
             </div>
     
@@ -91,36 +92,46 @@
                 <label>Languages and Frameworks known
                     <small>(Check all that apply)</small>
                 </label>
-                <label for="inp-1">
+                <label for="Inp-1">
                     <input type="checkbox"
-                        name="inp">C</input></label>
-                <label for="inp-2">
+                        name="Languages"
+                        value="C">C</input></label>
+                <label for="Inp-2">
                     <input type="checkbox"
-                        name="inp">C++</input></label>
-                <label for="inp-3">
+                        name="Languages"
+                        value="C++">C++</input></label>
+                <label for="Inp-3">
                     <input type="checkbox"
-                        name="inp">C#</input></label>
-                <label for="inp-4">
+                        name="Languages"
+                        value="C#">C#</input></label>
+                <label for="Inp-4">
                     <input type="checkbox"
-                        name="inp">Java</input></label>
-                <label for="inp-5">
+                        name="Languages"
+                        value="Java">Java</input></label>
+                <label for="Inp-5">
                     <input type="checkbox"
-                        name="inp">Python</input></label>
-                <label for="inp-6">
+                        name="Languages"
+                        value="Python">Python</input></label>
+                <label for="Inp-6">
                     <input type="checkbox"
-                        name="inp">JavaScript</input></label>
-                <label for="inp-7">
+                        name="Languages"
+                        value="JavaScript">JavaScript</input></label>
+                <label for="Inp-7">
                     <input type="checkbox"
-                        name="inp">React</input></label>
-                <label for="inp-7">
+                        name="Languages"
+                        value="React">React</input></label>
+                <label for="Inp-8">
                     <input type="checkbox"
-                        name="inp">Angular</input></label>
-                <label for="inp-7">
+                        name="Languages"
+                        value="Angular">Angular</input></label>
+                <label for="Inp-9">
                     <input type="checkbox"
-                        name="inp">Django</input></label>
-                <label for="inp-7">
+                        name="Languages"
+                        value="Django">Django</input></label>
+                <label for="Inp-10">
                     <input type="checkbox"
-                        name="inp">Spring</input></label>
+                        name="Languages"
+                        value="Spring">Spring</input></label>
             </div>
     
             <div class="form-control">
@@ -141,7 +152,7 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thank you for the survey...!"))
                 .catch(error => console.error('Error!', error.message))
             })
         </script>
